@@ -1,12 +1,30 @@
 body {
     font-family: "Montserrat";
+    text-align: center;
+}
+h1, h2, h3,h4, h5, h6 {
+    font-family: 'Montserrat-Black', sans-serif;
+    font-weight: 900;
+    line-height: 1.5;
+}
+h1 {
+    font-size: 3.5rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 1.4rem;
+} 
+p {
+    color: #8f8f8f;
 }
 #title {
     background-color: #ff4c68;
     color: #fff;
 }
-.navbar {
-    padding-bottom: 4rem;
+#title .container-fluid {
+    padding: 3% 15% 7%;
 }
 .navbar-brand {
     font-family: 'Ubuntu';
@@ -21,30 +39,8 @@ body {
     font-size: 1.2rem;
     opacity: 0.7;
 }
-.container-fluid {
-    padding: 5% 10% 7%;
-}
-
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: 3.5rem;
-    line-height: 1.5;
-    padding: 2rem 0;
-
-}
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: 2.5rem;
-    line-height: 1.5;
-}
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-} 
-p {
-    color: #8f8f8f;
+.container-fluid, .carousel-item  {
+    padding: 7% 15%;
 }
 .download-button {
     margin: 5% 3% 5% 0;
@@ -53,24 +49,17 @@ p {
     font-size: 1.4rem;
     padding:0 0.3rem;
 }
-
 .title-image{
     width: 25%;
     transform: rotate(25deg);
     z-index: 0;
     position: absolute;
     right: 20%;
+    top: 25%;
 }
 #features {
     background-color: #fff;
     position: relative;
-}
-#features .row {
-    padding: 7% 15%;
-}
-.feature-box {
-    text-align: center;
-    padding: 5%;
 }
 .feature-box i {
     color: #ef8172;
@@ -81,7 +70,6 @@ p {
     color: #ff4c68;
 }
 #testimonials {
-    text-align: center;
     background-color: #ef8172;
     color: #fff;
 }
@@ -90,12 +78,8 @@ p {
     border-radius: 50%;
     margin: 20px;
 }
-.carousel-item {
-    padding: 7% 15%;
-}
 #press {
     background-color: #ef8172;
-    text-align: center;
     padding-bottom: 3%;
 }
 .press-logo {
@@ -107,7 +91,6 @@ p {
 
 #pricing {
     padding: 7% 10%;
-    text-align: center;
 }
 
 .pricing-column{
@@ -115,9 +98,6 @@ p {
 }
 
 @media (max-width:1028px) {
-    #title {
-        text-align: center;
-    }
     .title-image{
         position: static;
         transform: rotate(0);
@@ -128,18 +108,10 @@ p {
 #cta {
     background-color: #ff4c68;
     color: #fff;
-    padding: 7% 15%;
-    text-align: center;
     height: 20%;
-}
-#cta h3 {
-    font-size: 3rem;
-
 }
 #footer {
     background-color: #fff;
-    padding: 7% 15%;
-    text-align: center;
     height: 10%;
 }
 .footer-icons i {
